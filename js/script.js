@@ -88,14 +88,19 @@ thumbList[counterImg].classList.add('active');
 
 // });
 
+// thumbList[counterImg]addEventListener('click', function(){
+//   this.classList.add('active');
+
+// });
 
 
+
+
+// FUNZIONI
 
 btnUp.addEventListener('click', startUp)
 btnDown.addEventListener('click', startDown)
 
-
-// FUNZIONI
 
 let slideUp
 function startUp() {
@@ -108,7 +113,7 @@ function startUp() {
     
     downUp(false);
     
-  }, 2000)
+  }, 1000)
 };
 
 
@@ -123,7 +128,7 @@ function startDown() {
 
     downUp(true);
     
-  }, 2000)
+  }, 1000)
 };
 
 
@@ -149,5 +154,7 @@ function downUp(isDown){
   thumbList[counterImg].classList.add('active');
 
 };
+
+
 
 

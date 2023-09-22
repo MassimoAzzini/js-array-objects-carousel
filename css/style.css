@@ -9,6 +9,7 @@ body {
 }
 
 .thumbnail img {
+  cursor: pointer;
   width: 100%;
   height: calc(100% / 5);
   object-fit: cover;
