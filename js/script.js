@@ -99,6 +99,9 @@ btnDown.addEventListener('click', startDown)
 
 let slideUp
 function startUp() {
+  this.removeEventListener('click', startUp);
+  btnDown.addEventListener('click', startDown);
+
   clearInterval(slideDown)
   
   slideUp = setInterval(function() {
@@ -111,6 +114,9 @@ function startUp() {
 
 let slideDown
 function startDown() {
+  this.removeEventListener('click', startDown);
+  btnUp.addEventListener('click', startUp);
+
   clearInterval(slideUp)
   
   slideDown = setInterval(function() {
