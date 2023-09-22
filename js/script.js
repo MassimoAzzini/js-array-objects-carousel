@@ -68,12 +68,18 @@ thumbList[counterImg].classList.add('active');
 
 
 btnDown.addEventListener('click', function(){
-  downUp(true);
+  // downUp(true);
+  setInterval(downUp(true), 1000)
+
 });
 
 btnUp.addEventListener('click', function(){
-  downUp(false);
+  // downUp(false);
+  setInterval(downUp, 1000)
+
 });
+
+
 
 
 function downUp(isDown){
