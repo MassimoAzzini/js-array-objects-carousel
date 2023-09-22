@@ -67,19 +67,58 @@ thumbList[counterImg].classList.add('active');
 
 
 
-btnDown.addEventListener('click', function(){
-  // downUp(true);
-  setInterval(downUp(true), 1000)
-
-});
-
-btnUp.addEventListener('click', function(){
-  // downUp(false);
-  setInterval(downUp, 1000)
-
-});
 
 
+// btnDown.addEventListener('click', function(){
+//   // downUp(true);
+//   // setInterval(downUp, 1000, true)
+
+//   setInterval(downUp, 1000, true)
+
+
+// });
+
+// btnUp.addEventListener('click', function(){
+
+//   // downUp(false);
+//   // setInterval(downUp, 1000, false)
+
+
+//   setInterval(downUp, 1000, false)
+
+// });
+
+
+
+
+btnUp.addEventListener('click', startUp)
+btnDown.addEventListener('click', startDown)
+
+
+// FUNZIONI
+
+let slideUp
+function startUp() {
+  clearInterval(slideDown)
+  
+  slideUp = setInterval(function() {
+    
+    downUp(false);
+    
+  }, 2000)
+};
+
+
+let slideDown
+function startDown() {
+  clearInterval(slideUp)
+  
+  slideDown = setInterval(function() {
+
+    downUp(true);
+    
+  }, 2000)
+};
 
 
 function downUp(isDown){
