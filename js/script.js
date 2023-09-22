@@ -7,13 +7,6 @@ const thumbContent = document.querySelector('.thumb-content')
 const btnUp = document.querySelector('.up')
 const btnDown = document.querySelector('.down')
 
-// const imagesList = [
-//   'img/01.webp',
-//   'img/02.webp',
-//   'img/03.webp',
-//   'img/04.webp',
-//   'img/05.webp'
-// ]
 
 const imagesList = [
   {
@@ -52,10 +45,6 @@ imagesList.forEach((imageObj) => {
 });
 
 
-// `<div class="description"><h3 class="mt-3">${member.name}</h3><p>${member.role}</p></div>`
-
-
-
 
 const itemList = document.getElementsByClassName('item');
 const description = document.getElementsByClassName('description');
@@ -64,35 +53,6 @@ const thumbList = document.getElementsByClassName('thumb-item');
 itemList[counterImg].classList.remove('d-none');
 description[counterImg].classList.remove('d-none');
 thumbList[counterImg].classList.add('active');
-
-
-
-
-
-// btnDown.addEventListener('click', function(){
-//   // downUp(true);
-//   // setInterval(downUp, 1000, true)
-
-//   setInterval(downUp, 1000, true)
-
-
-// });
-
-// btnUp.addEventListener('click', function(){
-
-//   // downUp(false);
-//   // setInterval(downUp, 1000, false)
-
-
-//   setInterval(downUp, 1000, false)
-
-// });
-
-// thumbList[counterImg]addEventListener('click', function(){
-//   this.classList.add('active');
-
-// });
-
 
 
 
